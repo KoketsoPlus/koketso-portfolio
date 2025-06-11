@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: black;
+}
+
+.nav a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.nav a:hover{
+     color: hotpink;
+}
+
+.wrapper {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper video{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper h1{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    mix-blend-mode: screen;
+    /*text-transform: uppercase;*/
+    font-size: 150px;
+    /*margin-left: 50px;*/
+}
+
+.wrapper p{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    mix-blend-mode: screen;
+    /*text-transform: uppercase;*/
+    font-size: 30px;
+}
+
+.weather{
+  margin-top: 150px;
+  position: relative;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/*.footer-icons {
+  margin-top: 20px;
+}*/
+
+.footer-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: hotpink;
+}
+
