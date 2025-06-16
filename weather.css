@@ -30,7 +30,11 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
-
+.button:active {
+    border: 2px solid #66da4300;
+    background: #ff5900;
+    color: black;
+}
 .card, .forecast-item {
   background: white;
   border-radius: 10px;

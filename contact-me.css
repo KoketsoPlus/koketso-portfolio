@@ -1,0 +1,114 @@
+body{
+    background-image: linear-gradient(45deg,
+    #330808,
+    #3a2c09);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('photo-1654649451086-dd75d8170a27.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1{
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        
+    }
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgb(127, 127, 240);
+    backdrop-filter: blur(15px);
+    border-radius: 2.5em;
+    padding: 30px;
+    width: 450px;
+    height: 550px;
+}
+
+
+
+.button{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background: #ff5900;
+    color: black;
+    padding: 0.7em 5.5em;
+    display: flex;
+    align-items: center;
+    border: 2px solid #66da4300;
+    border-radius: 5em;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 2px solid #ff5900;
+    background: #00000000;
+    color: #ff5900;
+}
+
+.button:active {
+    border: 2px solid #66da4300;
+    background: #ff5900;
+    color: black;
+}
+
+.input{
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    outline: none;
+    background-color: transparent;
+    color: #ff5900;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.inout:focus{
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    background-color: transparent;
+    color: white;
+}
+
+input::placeholder{
+    color: whitesmoke;
+}
+
+.textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(100% - 10px);
+    padding: 8px;
+    height:100px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    outline: none;
+    background-color: transparent;
+    color: #ff5900;
+}
+
+.textarea::placeholder{
+    color: whitesmoke;
+    text-align: center;
+}
+.textarea:focus{
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    background-color: transparent;
+    color: white;
+}
