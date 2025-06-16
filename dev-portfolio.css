@@ -62,8 +62,22 @@ body {
 }
 
 .weather{
-  margin-top: 150px;
+  background-image: url('Screenshot_2025-06-16_175009-removebg-preview.png');
+  background-size: cover;
+  width:10%;
+  height: 150px;
   position: relative;
+  margin-top: 200px;
+  animation: upDown 2s infinite ease-in-out;
+}
+
+@keyframes upDown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
 }
 
 footer {
@@ -71,6 +85,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 0px;
 }
 
 /*.footer-icons {
@@ -83,7 +98,7 @@ footer {
   margin: 0 10px;
   text-decoration: none;
   transition: color 0.3s;
-}
+  position: relative;}
 
 .footer-icons a:hover {
   color: hotpink;
