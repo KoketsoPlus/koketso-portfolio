@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: white;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  align-items: center;
+  height: 100%;
+  background-image: url(paul-volkmer-fX-qWsXl5x8-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+    position: relative;
+}
+
+.nav a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem 0;
+  background-color: black;
+}
+
+.nav a:hover{
+     color: hotpink;
+}
+
+
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 800px;
+    padding: 20px;
+  box-shadow: 0 0 10px 5px #48abe0,
+            0 0 20px 7px #ebecca,
+            0 0 25px 20px #8a2be2,
+            0 0 30px 25px #ff1493;
+  gap: 30px;
+}
+
+.profile-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 120px;
+  margin-right: 40px;;
+}
+
+
+.profile-pic {
+  position: absolute;
+ top: 5px;
+ right:40px;
+ bottom: 30px;
+  width: 300px;
+  z-index: 2;
+  object-fit: contain;
+  margin-right: 100px;
+
+}
+
+.about-text {
+  text-align: center;
+  margin-right: 180px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 400;
+  color: #ff5cac;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .about-container {
+    flex-direction: row;
+    text-align: center;;
+    gap: 10px;
+    margin-left: 300px;
+  }
+
+  .about-text {
+    max-width: 60%;
+  }
+
+}
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+
+.footer-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;}
+
+.footer-icons a:hover {
+  color: hotpink;
+}

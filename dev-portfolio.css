@@ -4,6 +4,14 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     background-color: black;
+    background-image: url(paul-volkmer-fX-qWsXl5x8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    position: sticky;
+    z-index: 1000;
+    position: relative;
 }
 
 .nav a{
@@ -17,6 +25,7 @@ body {
   gap: 2rem;
   list-style: none;
   padding: 2rem 0;
+  background-color: black;
 }
 
 .nav a:hover{
@@ -28,6 +37,10 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    box-shadow: 0 0 10px 5px #48abe0,
+            0 0 20px 7px #ebecca,
+            0 0 25px 20px #8a2be2,
+            0 0 30px 25px #ff1493;
 }
 
 .wrapper video{
@@ -35,7 +48,7 @@ body {
     top: 0;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 
 .wrapper h1{
@@ -45,21 +58,19 @@ body {
     background-color: white;
     text-align: center;
     mix-blend-mode: screen;
-    /*text-transform: uppercase;*/
     font-size: 150px;
     /*margin-left: 50px;*/
 }
 
-.wrapper p{
+  .wrapper p{
     width: 100%;
     height: 50%;
     margin: 0;
     background-color: white;
     text-align: center;
     mix-blend-mode: screen;
-    /*text-transform: uppercase;*/
-    font-size: 30px;
-}
+    font-size: 25px;
+  }
 
 .weather{
   background-image: url('Screenshot_2025-06-16_175009-removebg-preview.png');

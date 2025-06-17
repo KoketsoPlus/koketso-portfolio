@@ -1,114 +1,152 @@
-body{
-    background-image: linear-gradient(45deg,
-    #330808,
-    #3a2c09);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
     align-items: center;
-    background-image: url('photo-1654649451086-dd75d8170a27.jpg');
+    height: 100%;
+    margin: 0;
+    background-image: url(paul-volkmer-fX-qWsXl5x8-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-    h1{
-        color: whitesmoke;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        font-weight: bold;
-        font-size: 40px;
-        
-    }
 }
 
-.form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    box-shadow: 0 4px 10px rgb(127, 127, 240);
-    backdrop-filter: blur(15px);
-    border-radius: 2.5em;
-    padding: 30px;
-    width: 450px;
-    height: 550px;
+header {
+    position: sticky;
+    z-index: 1000;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem 0;
+  background-color: black;
+}
+
+.nav a:hover{
+     color: hotpink;
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+   box-shadow: 0 0 10px 5px #48abe0,
+            0 0 20px 7px #ebecca,
+            0 0 25px 20px #8a2be2,
+            0 0 30px 25px #ff1493;
+
+}
+
+.contact-section h1 {
+  font-size: 3em;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #357edd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #285bb5;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info p i {
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #357edd;
+}
+
+.rights {
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 20px;
 }
 
 
-
-.button{
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    background: #ff5900;
-    color: black;
-    padding: 0.7em 5.5em;
-    display: flex;
-    align-items: center;
-    border: 2px solid #66da4300;
-    border-radius: 5em;
-    overflow: hidden;
-    transition: all 0.2s;
-    cursor: pointer;
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 70px;
 }
 
-.button:hover{
-    border: 2px solid #ff5900;
-    background: #00000000;
-    color: #ff5900;
-}
+/*.footer-icons {
+  margin-top: 20px;
+}*/
 
-.button:active {
-    border: 2px solid #66da4300;
-    background: #ff5900;
-    color: black;
-}
+.footer-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;}
 
-.input{
-    width: calc(100% - 10px);
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s;
-    text-align: center;
-}
-
-.inout:focus{
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
-}
-
-input::placeholder{
-    color: whitesmoke;
-}
-
-.textarea{
-    font-family: Arial, Helvetica, sans-serif;
-    width: calc(100% - 10px);
-    padding: 8px;
-    height:100px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-}
-
-.textarea::placeholder{
-    color: whitesmoke;
-    text-align: center;
-}
-.textarea:focus{
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
+.footer-icons a:hover {
+  color: hotpink;
 }
