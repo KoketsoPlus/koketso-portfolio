@@ -31,6 +31,7 @@ header {
   list-style: none;
   padding: 2rem 0;
   background-color: black;
+  font-weight: bold;
 }
 
 .nav a:hover{
@@ -92,6 +93,7 @@ h3 {
   color: #ff5cac;
   margin-bottom: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
 p {

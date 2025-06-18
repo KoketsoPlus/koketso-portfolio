@@ -29,6 +29,7 @@ header {
   list-style: none;
   padding: 2rem 0;
   background-color: black;
+  font-weight: bold;
 }
 
 .nav a:hover{
@@ -36,7 +37,7 @@ header {
 }
 
 .contact-section {
-  max-width: 900px;
+  max-width: 700px;
   margin: 50px auto;
   padding: 20px;
   text-align: center;
@@ -132,7 +133,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 /*.footer-icons {
